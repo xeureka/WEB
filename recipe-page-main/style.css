@@ -1,0 +1,23 @@
+
+
+
+body{
+    background-color: antiquewhite;
+    height:100%;
+    width:100%;
+}
+
+.conainer{
+    background-color: snow;
+    padding:12px;
+    height:85%;
+    width:50%;
+    margin-left: 50%;
+    border-radius: 12px;
+}
+
+.image{
+    border-radius: 12px;
+    width:100%;
+    height:auto;
+}

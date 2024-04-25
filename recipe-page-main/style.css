@@ -1,30 +1,92 @@
 
 
 *{
+    height:100%;
+    width:100%;
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: antiquewhite;
-    height:100%;
-    width:100%;
+    /* background-color: ; */
 }
 
-.container{
-    padding:13px;
-    margin:40px;
-    height:auto;
-    width:50%;
-    margin-left: 25%;
+body{
+    background-color: rgb(173, 110, 34);
+}
+
+.boxes{
+    margin:36px;
+    padding:12px;
     background-color: white;
     border-radius: 10px;
+    height:auto;
+    width:50%;
+    margin-left:25%;
+    gap:20px;
+}
+
+.box{
+    background-color: white;
 }
 
 .image{
+    border-radius: 12px;
     width:100%;
     height:auto;
-    border-radius: 12px;
 }
 
-.simple{
-    background-color: inherit;
+.heading1{
+    margin: 9px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.para1{
+    font-size: 10px;
+}
+
+.prep{
+    
+    padding:10px;
+    margin:8px;
+    background-color: rgb(245, 222, 245);
+    margin-right:0;
+}
+
+.heading2{
+    font-size: 14px;
+    color:rgb(118, 17, 118);
+}
+
+.list1{
+    margin:7px;
+    font-size: 10px;
+}
+
+.heading3{
+    font-size: 14px;
+    color:rgb(181, 59, 38);
+    margin-bottom: 8px;
+}
+.list2{
+    font-size: 10px;
+    margin-left:12px;
+    margin-bottom: 12px;
+}
+
+table {
+    margin-left:25%;
+    margin-top: 8px;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #e0e0e0; /* Adjust border thickness and color */
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
 }

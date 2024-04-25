@@ -1,23 +1,30 @@
 
 
-
-body{
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
     background-color: antiquewhite;
     height:100%;
     width:100%;
 }
 
-.conainer{
-    background-color: snow;
-    padding:12px;
-    height:85%;
+.container{
+    padding:13px;
+    margin:40px;
+    height:auto;
     width:50%;
-    margin-left: 50%;
-    border-radius: 12px;
+    margin-left: 25%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .image{
-    border-radius: 12px;
     width:100%;
     height:auto;
+    border-radius: 12px;
+}
+
+.simple{
+    background-color: inherit;
 }

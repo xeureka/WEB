@@ -1,0 +1,65 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar{
+
+    padding:10px;
+    font-family: monospace;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color:green;
+}
+
+.part1{
+    width:100%;
+    font-size: 36px;
+    font-family: fantasy;
+    display: flex;
+    flex-direction: column;
+}
+
+
+head2{
+    align-self: center;
+
+}
+
+button{
+    border:none;
+    
+    align-self: center;
+    padding:12px;
+    background-color:rgb(82, 183, 82);
+    height: auto;
+    width:100px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.first-part {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px; /* Adjust the height of the curve as needed */
+    background: linear-gradient(to right, transparent, transparent 49%, purple 50%, purple);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 1;
+}

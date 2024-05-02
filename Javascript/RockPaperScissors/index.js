@@ -5,33 +5,65 @@ function getRndInteger(min=0, max=2) {
   }
 
 
-// Function to get a random computers choice
+  let game = ['rock','paper','scissor']
 
-function getComputer(){
-    x= getRndInteger(0,2);
-    arr = ['rock','paper','scissor'];
+//   A function to get computers choice
 
-    comupterAnswer = arr[x];
-    return comupterAnswer;
-}
+  function getComputer(){
+    let x = getRndInteger()
 
-// a  function to accept and store users input
+    let cChoice = game[x].toLowerCase()
+
+    return cChoice
+  }
+
+//   A function to get users choice
+
 function getUser(){
-    let input = prompt('Please enter Your choice from Rock, paper or scissor: ')
+    let input = prompt('Enter your choice:-  ')
     return input
 }
 
-let humanScore = 0;
-let computerScore = 0;
+// Afunction to play one game
 
-let cout = 0;
-
-while(cout <=5){
-    getComputer();
-    getUser();
-
-    if (getUser() == getComputer()){
-        console.log('TIE')
-    }else if (getUser() === 'rock')
-
+function playGame(uS,cS){
+    if(uS === cS){
+        alert('Tie')
+    }else if (uS === 'rock' && cS === 'scissor'){
+        hs++;
+        alert("Rock beats scissor");
+    }else if (uS === 'paper' && cS === 'rock'){
+        hs++;
+        alert('Paper beats Rock')
+    }else if (uS === 'scissor' && cS === 'paper'){
+        hs++;
+        alert('scissor beats paper')
+    }else{
+        ms ++;
+        alert(`${cS} beats ${uS}`)
+    }
+    
 }
+
+let uS =0;
+let cS =0;
+let hs =0;
+let ms =0;
+
+// function to play 5 games
+
+function playGround(){
+    for(let i =0;i<5;i++){
+        uS = getUser();
+        cS = getComputer();
+        console.log(cS);
+
+        playGame(uS,cS);
+
+        alert(`Your score is ${hs}`)
+        alert(`Computers score is ${ms}`)
+
+    }
+}
+
+playGround();

@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.part1{
+    background-color: rgb(0, 0, 0);
+    height: fit-content;
+    width: 100%;
+}
+
+.logo,.social-links{
+    color: white;   
+}
+.social-links i{
+    margin-right: 12px;
+    
+}
+
+.navbar{
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.social-links .github,.social-links .telegram{
+    transition: transform 0.3s;
+}
+
+.social-links .github:hover,
+.social-links .telegram:hover{
+
+    transform: translateY(-10px);
+}
+
+
+.image-sec{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.image-sec .box{
+    margin: 16px;
+    border: 2px solid whitesmoke;
+    width: fit-content;
+    
+    padding: 18px;
+    transition: transform 0.3s;
+}
+
+.image-sec .box:hover{
+    background-color: white;
+    color: black;
+
+    transform: translateY(-10px);
+}
+

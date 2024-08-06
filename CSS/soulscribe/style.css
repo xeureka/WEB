@@ -133,3 +133,18 @@
 
     transform: translateY(-10px);
 }
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+

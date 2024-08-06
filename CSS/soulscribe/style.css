@@ -62,3 +62,17 @@
     transform: translateY(-10px);
 }
 
+.part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: rgb(254, 248, 248);
+}
+
+
+.cont{
+    width: 50%;
+    height: auto;
+    border: 1px solid rgb(254, 248, 248);
+}

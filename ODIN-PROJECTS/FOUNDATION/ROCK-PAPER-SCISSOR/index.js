@@ -59,3 +59,53 @@ function playGround(){
 }
 
 playGround()
+
+
+
+
+// another code sample
+
+
+// rock paper scissor game
+
+function getComputerChoice(){
+    const num = Math.floor(Math.random()*3);
+    const menue = ['R','P','S'];
+    return menue[num]
+
+}
+
+function getHumanChoice(){
+    let userInput = prompt('Pleae Enter [R,P,S]: ')
+    return userInput
+    
+}
+
+const humanChoice = getHumanChoice();
+const computerChoice = getComputerChoice();
+
+function playGround(humanChoice,computerChoice){
+    let humanScore = 0;
+    let computerScore = 0;
+
+    if (humanChoice == computerChoice){
+        console.log('Tie');
+        console.log(`You score = ${humanScore} , Computer Score = ${computerScore}`)
+    }
+    
+    else if((humanChoice == 'R' && computerChoice == 'S') || (humanChoice == 'P' && computerChoice == 'R') || (humanChoice == 'S' && computerChoice == 'P')){
+        humanScore +=1;
+        console.log('Human Wins')
+        console.log(`You score = ${humanScore} , Computer Score = ${computerScore}`)
+
+    }else{
+        computerScore += 1;
+        console.log('Computer Wins')
+        console.log(`You score = ${humanScore} , Computer Score = ${computerScore}`)
+    }
+
+
+}
+
+
+playGround(humanChoice,computerChoice)

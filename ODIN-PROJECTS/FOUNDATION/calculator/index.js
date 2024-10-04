@@ -2,6 +2,16 @@
 
 const display = document.getElementById('display')
 
+const btnItems = document.getElementById('btn')
+
+
+btnItems.forEach(button => {
+    button.addEventListener('click', () => {
+        addItem(button.textContent); 
+    });
+});
+
+
 function addItem(input){
     display.value += input
 

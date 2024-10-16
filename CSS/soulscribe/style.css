@@ -148,3 +148,13 @@ footer a{
     color: inherit;
 }
 
+
+#name-link{
+    transition: color 0.25s;
+
+}
+
+#name-link:hover{
+    color: tomato;
+    
+}

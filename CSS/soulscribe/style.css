@@ -33,7 +33,8 @@
 .social-links .github:hover,
 .social-links .telegram:hover{
 
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
 

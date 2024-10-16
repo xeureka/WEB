@@ -52,7 +52,7 @@
     width: fit-content;
     
     padding: 18px;
-    transition: transform 0.3s;
+    transition: transform 0.45s;
 }
 
 .image-sec .box:hover{

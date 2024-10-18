@@ -33,11 +33,86 @@ body{
 }
 
 .input-pfp{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input-pfp div{
+    display: flex;
+    gap: 20px;
+}
+
+.input-pfp div .name{
+    align-self: center;
+}
+.input-pfp input{
+    border: none;
+    width: 50%;
+    height: 24px;
+    padding: 0.3rem 0.2rem;
+    background-color: rgba(229, 219, 219, 0.743);
+    border-radius: 12px;
+}
+
+
+
+.circle{
+    color: black;
+    box-sizing: content-box;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 0, 0.886);
+    height: 25px;
+    width: 25px;
+    padding: 0.5rem 0.7rem;
     
+
+}
+
+.input-pfp .name{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.intro-user{
+    margin: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-user .what{
+    display: flex;
+    gap: 14px;
+    color: black;
+}
+
+.btn1{
+    display: flex;
+    gap: 16px;
+
+
+}
+
+.btns{
+    color: white;
+    background-color:dodgerblue;
+    color: white;
+    border: 1px lightblue solid;
+    border-radius:12px ;
+    width: fit-content;
+    padding: 0.5rem 0.7rem;
+    align-self: center;
+    font-weight: bold;
+}
+.btns:hover{
+    background-color: rgba(86, 170, 254,0.78);
 }
 
 header{
     grid-area: header;
+    background-color: white;
+    border-bottom:4px solid rgba(199, 192, 192,0.5) ;
+    margin: 12px;
 
 
 }

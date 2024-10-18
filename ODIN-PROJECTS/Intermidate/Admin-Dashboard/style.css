@@ -117,8 +117,58 @@ header{
 
 }
 
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dash{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.dash p{
+    text-align: center;
+}
+
+.tab-tasks{
+    align-self: center;
+    
+
+}
+
+.tab-tasks p{
+    margin: 12px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.tab-tasks p:hover{
+    color: rgba(49, 31, 242, 0.912);
+}
+
+.tab-add{
+    align-self: center;
+
+}
+
+.tab-add p{
+    margin: 12px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.tab-add p:hover{
+    color: rgba(232, 232, 239, 0.974);
+}
+
+
 nav{
     grid-area: nav;
+    background-color: rgba(6, 96, 185, 0.696);
 
 }
 

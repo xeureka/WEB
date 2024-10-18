@@ -23,7 +23,7 @@ aside{
 
 body{
     display: grid;
-    height: 100vh;
+    height: 100%;
     grid-template-columns:1fr 5fr 1fr ;
     grid-template-rows: 1fr 5fr;
     grid-template-areas: 
@@ -172,11 +172,40 @@ nav{
 
 }
 
-main{
-    grid-area: main;
 
+
+.cards{
+    background-color: white;
+    color: black;
+    border-radius:7px ;
+    height: 200px;
+    width: 200px;
+    padding: 1rem 1rem;
+    border: 2px light rgba(193, 191, 191, 0.833);
+    border-left:6px solid rgba(252, 191, 77, 0.927) ;
 }
 
+.cards .tit1{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+
+}
+main,
+aside{
+    background-color: rgb(249, 243, 243);
+}
 aside{
     grid-area: aside;
 

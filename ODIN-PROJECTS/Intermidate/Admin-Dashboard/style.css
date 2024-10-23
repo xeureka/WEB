@@ -247,15 +247,7 @@ aside .anoun-cont,.trending-box{
 }
 
 
-/* <div class="trending">
-                <p class="trend">Trending</p>
-                <div class="trending-box">
-                    <div class="circle"></div>
-                    <p>@morgan</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
 
-            </div> */
 
 .trending-box{
     display: flex;

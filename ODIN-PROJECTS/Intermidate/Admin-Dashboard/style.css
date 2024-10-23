@@ -204,7 +204,7 @@ main{
 }
 main,
 aside{
-    background-color: rgb(249, 243, 243);
+    background-color:#dee5f1e9;
 }
 aside{
     grid-area: aside;

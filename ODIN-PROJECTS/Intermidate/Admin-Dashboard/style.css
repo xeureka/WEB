@@ -213,4 +213,113 @@ aside{
 
 
 
+aside {
+    color: black;
+    padding: 4rem;
+}
 
+aside .anoun .nounc{
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+aside .anoun-cont,.trending-box{
+    margin: 16px;
+    width: 100%;
+    height: fit-content;
+    border: 2px solid rgba(246, 239, 239, 0.717);
+    background-color: white;
+    padding: 17px;
+    border-radius: 5px;
+}
+
+.anoun-cont .small-box,
+.trending-box{
+    padding: 2px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.7rem;
+
+}
+
+.anoun-cont .small-box p{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+/* <div class="trending">
+                <p class="trend">Trending</p>
+                <div class="trending-box">
+                    <div class="circle"></div>
+                    <p>@morgan</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+            </div> */
+
+.trending-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    border: none;
+}
+
+.trending-box .circle{
+    margin: 12px;
+}
+
+
+.anoun.nounc{ 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Large screens (desktops and laptops) */
+@media (min-width: 1200px) {
+    body {
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 1fr 5fr;
+        grid-template-areas: 
+        'nav header header'
+        'nav main aside'
+        'nav main aside';
+    }
+}
+
+/* Medium screens (tablets, smaller laptops) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    body {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 4fr;
+        grid-template-areas: 
+        'header header'
+        'nav main'
+        'nav aside';
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 767px) {
+    body {
+        display: block;
+    }
+
+    header, nav, main, aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: block;
+    }
+
+    .input-pfp div {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

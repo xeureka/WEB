@@ -10,7 +10,10 @@ const ToDo = () => {
     }
 
     function addTask(){
-
+        if (newTask){
+            setTasks(t => [...t,newTask]);
+            setTasks("");
+        }
     }
 
     function deleteTask(index){

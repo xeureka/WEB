@@ -1,10 +1,10 @@
 import React from 'react'
-import { useState } from 'react'
+import ToDo from './Components/ToDo'
 
 const App = () => {
   return (
     <div>
-      <p>CV BUILDER APP</p>
+      <ToDo />
     </div>
   )
 }

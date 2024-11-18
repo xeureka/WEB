@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import { Typewriter } from 'react-simple-typewriter'
 
 const ToDo = () => {
     const [tasks,setTask] = useState(['Eat BreakFast','Take a Shower']);
@@ -45,8 +46,24 @@ const ToDo = () => {
     }
 
   return ( 
+    
     <div className='bg-indigo-400 text-white w-full min-h-screen flex items-center flex-col font-mono '>
-      <h1 className='text-4xl font-bold my-4'>TO DO APP</h1>
+      
+        <div className='text-4xl font-bold my-4'>
+                <Typewriter 
+
+                    words= {['TO DO APPLICATION']}
+                    loop={5}
+                    cursor
+                    cursorStyle = '_'
+                    cursorColor='slate'
+                    typeSpeed={100}
+                    delaySpeed={1000}
+                    deleteSpeed={90}
+
+        />
+        </div>
+      
 
       <div>
         <input 
